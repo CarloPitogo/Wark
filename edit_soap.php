@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// Convert existing follow-up datetime for HTML input
+
 $follow_up_value = '';
 if (!empty($soap['follow_up'])) {
     $follow_up_value = date('Y-m-d\TH:i', strtotime($soap['follow_up']));
